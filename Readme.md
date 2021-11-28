@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
-* Студент: [Антон Суслов](https://up.htmlacademy.ru/adaptive/24/user/1855511).
-* Наставник: `Неизвестно`.
+* Студент: [Антон Суслов](https://htmlacademy.ru/profile/id1855511).
+* Наставник: [Сергей Зубов](https://https://htmlacademy.ru/profile/serj).
 
 ---
 
