@@ -2,15 +2,17 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона</title>
+    <title>Форма для вашего отзыва</title>
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город «Седона»">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -34,36 +36,40 @@
       <h1 class="visually-hidden">Форма для вашего отзыва</h1>
       <section class="review">
         <div class="review__wrapper">
-            <p class="review__text">Оставьте свой отзыв</p>
-            <p class="review__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="review__text">Оставьте свой отзыв</p>
+          <p class="review__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
       <section class="name">
-        <h2 class="visually-hidden">Личная информация</h2>
-        <p class="name__tittle">Представьтесь:</p>
         <form class="name__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="name">Имя*:</label>
-          <input class="name__field"  placeholder="Введите имя" type="text" name="name" id="name" required>
-        </form>
-        <form class="name__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="surname">Фамилия*:</label>
-          <input class="name__field"  placeholder="Введите фамилию" type="text" name="surname" id="surname" required>
-        </form>
-        <form class="name__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="middlename">Отчество*:</label>
-          <input class="name__field"  placeholder="Введите отчество" type="text" name="middlename" id="middlename" required>
+          <h2 class="visually-hidden">Личная информация</h2>
+          <p class="name__form-tittle">Представьтесь:</p>
+          <div class="name__form-item">
+            <label class="visually-hidden" for="name">Имя*:</label>
+            <input class="name__form-item-field"  placeholder="Введите имя" type="text" name="name" id="name" required>
+          </div>
+          <div class="name__form-item">
+            <label class="visually-hidden" for="surname">Фамилия*:</label>
+            <input class="name__form-item-field"  placeholder="Введите фамилию" type="text" name="surname" id="surname" required>
+          </div>
+          <div class="name__form-item">
+            <label class="visually-hidden" for="middlename">Отчество*:</label>
+            <input class="name__form-item-field"  placeholder="Введите отчество" type="text" name="middlename" id="middlename" required>
+          </div>
         </form>
       </section>
       <section class="contact">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <p class="contact__tittle">Контактная информация:</p>
         <form class="contact__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="phone">Контактный телефон*:</label>
-          <input class="contact__field"  placeholder="Введите телефон*:" type="text" name="phone" id="phone" required>
-        </form>
-        <form class="contact__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="email">Электронная почта*:</label>
-          <input class="contact__field"  placeholder="Введите e-mail" type="text" name="email" id="email" required>
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <p class="contact__tittle">Контактная информация:</p>
+          <div class="contact__form-item">
+            <label class="visually-hidden" for="phone">Контактный телефон*:</label>
+            <input class="contact__item-field"  placeholder="Введите телефон*:" type="text" name="phone" id="phone" required>
+          </div>
+          <form class="contact__form-item">
+            <label class="visually-hidden" for="email">Электронная почта*:</label>
+            <input class="contact__item-field"  placeholder="Введите e-mail" type="text" name="email" id="email" required>
+          </div>
         </form>
       </section>
       <section class="impression">
