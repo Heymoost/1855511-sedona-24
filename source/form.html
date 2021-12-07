@@ -19,7 +19,7 @@
               <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">фото и видео</a>
+              <a href="catalog.html">фото и видео</a>
             </li>
             <li class="site-list__item">
               Форма отзыва
@@ -31,6 +31,7 @@
         </div>
       </nav>
     </header>
+    <!--Главный заголовок -->
     <main class="page-main">
       <img class="sedona" src="img/sedona.svg" alt="Фото приветствия." width="229" height="39">
       <h1 class="visually-hidden">Форма для вашего отзыва</h1>
@@ -40,57 +41,53 @@
           <p class="review__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
-      <section class="name">
-        <form class="name__form" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="info" action="https://echo.htmlacademy.ru/" method="post">
+        <section class="info__name">
           <h2 class="visually-hidden">Личная информация</h2>
-          <p class="name__form-tittle">Представьтесь:</p>
-          <div class="name__form-item">
+          <p class="info__name-tittle">Представьтесь:</p>
+          <div class="info__name-item">
             <label class="visually-hidden" for="name">Имя*:</label>
-            <input class="name__form-item-field"  placeholder="Введите имя" type="text" name="name" id="name" required>
+            <input class="info__name-item-field"  placeholder="Введите имя" type="text" name="name" id="name" required>
           </div>
-          <div class="name__form-item">
+          <div class="info__name-item">
             <label class="visually-hidden" for="surname">Фамилия*:</label>
-            <input class="name__form-item-field"  placeholder="Введите фамилию" type="text" name="surname" id="surname" required>
+            <input class="info__name-item-field"  placeholder="Введите фамилию" type="text" name="surname" id="surname" required>
           </div>
-          <div class="name__form-item">
+          <div class="info__name-item">
             <label class="visually-hidden" for="middlename">Отчество*:</label>
-            <input class="name__form-item-field"  placeholder="Введите отчество" type="text" name="middlename" id="middlename" required>
+            <input class="info__name-item-field"  placeholder="Введите отчество" type="text" name="middlename" id="middlename" required>
           </div>
-        </form>
-      </section>
-      <section class="contact">
-        <form class="contact__form" action="https://echo.htmlacademy.ru/" method="post">
+        </section>
+        <section class="info__contact">
           <h2 class="visually-hidden">Контактная информация</h2>
-          <p class="contact__tittle">Контактная информация:</p>
-          <div class="contact__form-item">
+          <p class="info__contact-tittle">Контактная информация:</p>
+          <div class="info__contact-item">
             <label class="visually-hidden" for="phone">Контактный телефон*:</label>
-            <input class="contact__item-field"  placeholder="Введите телефон*:" type="text" name="phone" id="phone" required>
+            <input class="info__contact-item-field"  placeholder="Введите телефон*:" type="text" name="phone" id="phone" required>
           </div>
-          <div class="contact__form-item">
+          <div class="info__contact-item">
             <label class="visually-hidden" for="email">Электронная почта*:</label>
-            <input class="contact__item-field"  placeholder="Введите e-mail" type="text" name="email" id="email" required>
+            <input class="info__contact-item-field"  placeholder="Введите e-mail" type="text" name="email" id="email" required>
           </div>
-        </form>
-      </section>
-      <section class="impression">
-        <h2 class="visually-hidden">Впечателение</h2>
-        <form class="impression__form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="impression__form-group">
-            <legend class="impression__form-title">Ваше общее впечатление:</legend>
-              <ul class="impression__form-list">
-                <li class="impression__form-item">
+        </section>
+        <section class="info__impression">
+          <h2 class="visually-hidden">Впечателение</h2>
+          <fieldset class="info__impression-group">
+            <legend class="info__impression-group-title">Ваше общее впечатление:</legend>
+              <ul class="info__impression-group-list">
+                <li class="info__impression-group-item">
                   <label class="answer">
                     <input class="visually-hidden answer__input" type="radio" name="answer__type" value="positive" checked>
                     <span class="answer__control">Скорее положительное</span>
                   </label>
                 </li>
-                <li class="impression__form-item">
+                <li class="info__impression-group-item">
                   <label class="answer">
                     <input class="visually-hidden answer__input" type="radio" name="answer__type" value="negative">
                     <span class="answer__control">Скорее отрицательное</span>
                   </label>
                 </li>
-                <li class="impression__form-item">
+                <li class="info__impression-group-item">
                   <label class="answer">
                     <input class="visually-hidden answer__input" type="radio" name="answer__type" value="inert">
                     <span class="answer__control">Затрудняюсь ответить</span>
@@ -98,33 +95,31 @@
                 </li>
               </ul>
           </fieldset>
-        </form>
-      </section>
-      <section class="attraction">
-        <h2 class="visually-hidden">Достопримечательности</h2>
-        <form class="attraction__form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="attraction__form-group">
-            <legend class="attraction__form-title">Посещенные достопримечательности:</legend>
-              <ul class="attraction__form-list">
-                <li class="attraction__form-item">
+        </section>
+        <section class="info__attraction">
+          <h2 class="visually-hidden">Достопримечательности</h2>
+          <fieldset class="info__attraction-group">
+            <legend class="info__attraction-title">Посещенные достопримечательности:</legend>
+              <ul class="info__attraction-list">
+                <li class="info__attraction-item">
                   <label class="point">
                     <input class="visually-hidden control-input" type="checkbox" name="bridge" checked>
                     <span class="point__control">Мост Дьявола</span>
                   </label>
                 </li>
-                <li class="attraction__form-item">
+                <li class="info__attraction-item">
                   <label class="point">
                     <input class="visually-hidden control-input" type="checkbox" name="hill" checked>
                     <span class="point__control">Гора-Колокол</span>
                   </label>
                 </li>
-                <li class="attraction__form-item">
+                <li class="info__attraction-item">
                   <label class="point">
                     <input class="visually-hidden control-input" type="checkbox" name="park" checked>
                     <span class="point__control">Слайд-парк</span>
                   </label>
                 </li>
-                <li class="attraction__form-item">
+                <li class="info__attraction-item">
                   <label class="point">
                     <input class="visually-hidden control-input" type="checkbox" name="rocks">
                     <span class="point__control">Красные скалы</span>
@@ -132,16 +127,14 @@
                 </li>
               </ul>
           </fieldset>
-        </form>
-      </section>
-      <section class="emotions">
-        <h2 class="visually-hidden">Опишите свои эмоции:</h2>
-        <form class="emotions__form" action="https://echo.htmlacademy.ru/" method="post">
+        </section>
+        <section class="info__emotions">
+          <h2 class="visually-hidden">Опишите свои эмоции:</h2>
           <label class="visually-hidden" for="emotions">Эмоции.</label>
-          <input class="emotions__field" placeholder="Опишите подробно все свои восторги" type="text" name="emotions" id="emotions" required>
-        </form>
-        <button class="comment" type="button">Отправить отзыв</button>
-      </section>
+          <input class="info__emotions-field" placeholder="Опишите подробно все свои восторги" type="text" name="emotions" id="emotions" required>
+          <button class="comment" type="submit">Отправить отзыв</button>
+        </section>
+      </form>
     </main>
     <!-- Подвал -->
     <footer class="page-footer">
