@@ -17,3 +17,41 @@
 .search__info {
   margin: 0;
 }
+
+.map-tablet {
+  display: none;
+}
+
+.map-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    display: none;
+  }
+
+  .map-tablet {
+    display: inline-block;
+    justify-content: center;
+  }
+
+  .map-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    display: none;
+  }
+
+  .map-tablet {
+    display: none;
+  }
+
+  .map-desktop {
+    display: inline-block;
+    justify-content: center;
+  }
+}
