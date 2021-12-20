@@ -14,11 +14,11 @@
   font-display: swap;
 }
 
-html {
+.page {
   height: 100%;
 }
 
-body {
+.page__body {
   min-height: 100%;
   margin: 0 auto;
   font-family: "PT Sans", sans-serif;
@@ -39,4 +39,14 @@ body {
   margin: -1px;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .page__body {
+    width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
 }
