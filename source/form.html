@@ -2,32 +2,31 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма для вашего отзыва</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <!-- Шапка -->
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo">
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город «Седона»">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="index.html">Главная</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__item-link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="catalog.html">Фото и видео</a>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="site-list__item  site-list__item--active">
-              <a class="site-list__item-link" href="form.html">Форма отзыва</a>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="https://htmlacademy.ru">HTML Academy</a>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -80,19 +79,19 @@
               <ul class="info__impression-group-list">
                 <li class="info__impression-group-item">
                   <label class="answer">
-                    <input class="visually-hidden answer__input" type="radio" name="answer__type" value="positive" checked>
+                    <input class="answer__input" type="radio" name="answer__type" value="positive" checked>
                     <span class="answer__control">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="info__impression-group-item">
                   <label class="answer">
-                    <input class="visually-hidden answer__input" type="radio" name="answer__type" value="negative">
+                    <input class="answer__input" type="radio" name="answer__type" value="negative">
                     <span class="answer__control">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="info__impression-group-item">
                   <label class="answer">
-                    <input class="visually-hidden answer__input" type="radio" name="answer__type" value="inert">
+                    <input class="answer__input" type="radio" name="answer__type" value="inert">
                     <span class="answer__control">Затрудняюсь ответить</span>
                   </label>
                 </li>
@@ -106,25 +105,25 @@
               <ul class="info__attraction-list">
                 <li class="info__attraction-item">
                   <label class="point">
-                    <input class="visually-hidden control-input" type="checkbox" name="bridge" checked>
+                    <input class="control-input" type="checkbox" name="bridge" checked>
                     <span class="point__control">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="info__attraction-item">
                   <label class="point">
-                    <input class="visually-hidden control-input" type="checkbox" name="hill" checked>
+                    <input class="control-input" type="checkbox" name="hill" checked>
                     <span class="point__control">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="info__attraction-item">
                   <label class="point">
-                    <input class="visually-hidden control-input" type="checkbox" name="park" checked>
+                    <input class="control-input" type="checkbox" name="park" checked>
                     <span class="point__control">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="info__attraction-item">
                   <label class="point">
-                    <input class="visually-hidden control-input" type="checkbox" name="rocks">
+                    <input class="control-input" type="checkbox" name="rocks">
                     <span class="point__control">Красные скалы</span>
                   </label>
                 </li>
@@ -154,10 +153,10 @@
             <a class="social__link social__link--youtube" href="#">Ютуб</a>
           </li>
         </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </footer>
   </body>
