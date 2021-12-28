@@ -1,5 +1,36 @@
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 22px;
+}
+
+.page-footer__copyright-text {
+  display: flex;
+  align-items: center;
+  line-height: 26px;
+  padding-right: 15px;
+  margin: 0;
+}
+
+.page-footer__copyright-link {
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer__social {
     display: flex;
+    justify-content: space-between;
+    padding: 36px 60px;
+  }
+
+  .page-footer__copyright {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__social {
+    padding: 36px 120px;
   }
 }
