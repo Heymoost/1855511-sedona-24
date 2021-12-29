@@ -1,6 +1,6 @@
 .review {
   background-image: url("../img/back-desktop.jpg");
-  background-size: 100% auto;
+  background-size: 100% 233px;
   background-repeat: no-repeat;
 }
 
@@ -8,17 +8,36 @@
   padding: 52px;
 }
 
+.review__wrapper {
+  padding: 90px 10px 16px 10px;
+}
+
 .review__text {
   margin: 0;
-  padding: 103px 6px 16px 6px;
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
 }
 
 .review__desc {
   margin: 0;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .review__wrapper {
+    padding: 100px 140px 66px 140px;
+  }
+
+  .review__text {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__wrapper {
+    padding: 100px 350px 66px 350px;
+  }
 }
