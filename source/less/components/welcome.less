@@ -11,14 +11,14 @@
 }
 
 .welcome__wrapper {
-  padding: 0 19px 11px 16px;
+  padding: 32px 19px 11px 16px;
   background-color: #ffffff;
 }
 
 .welcome__text {
   margin: 0;
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
@@ -28,4 +28,17 @@
 
 .welcome__desc {
   margin: 0;
+  line-height: 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__wrapper {
+    padding: 44px 100px 52px 100px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome__wrapper {
+    padding: 55px 335px 41px 335px;
+  }
 }

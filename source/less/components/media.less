@@ -1,13 +1,28 @@
+.media__wrapper {
+  padding: 32px 9px 20px 12px;
+}
+
 .media__text {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
 }
 
 .media__desc {
   margin: 0;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+}
+
+@media (min-width: @tablet-width) {
+  .media__wrapper {
+    padding: 64px 155px 64px 155px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .media__wrapper {
+    padding: 102px 370px 67px 370px;
+  }
 }
