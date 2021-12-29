@@ -53,3 +53,27 @@
     grid-row: 1 / 2;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .photo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .photo-block__vast {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .photo-block__vast {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+}

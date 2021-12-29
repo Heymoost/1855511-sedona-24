@@ -450,3 +450,29 @@
     width: 480px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .info__impression {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .info__contact {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+
+  .info__attraction {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
+
+  .info__emotions {
+    grid-column: 1 / -1;
+  }
+}
