@@ -6,6 +6,8 @@
     <title>Форма для вашего отзыва</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32.png">
   </head>
   <!-- Шапка -->
   <body class="page__body">
@@ -21,7 +23,10 @@
               <a class="main-nav__item-link" href="catalog.html">Фото и видео</a>
             </li>
             <a class="main-nav__logo" href="index.html">
-              <img class="main-nav__logo-img" src="img/logotype-mobile.svg" width="102" height="84" alt="Город «Седона»">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg, img/logotype-desktop@2x.svg 2x">
+                <img class="main-nav__logo-img" src="img/logotype-mobile.svg" srcset="img/logotype-mobile@2x.svg" width="102" height="84" alt="Город «Седона»">
+              </picture>
             </a>
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="form.html">Форма отзыва</a>
@@ -37,7 +42,15 @@
     <main class="page-main">
       <h1 class="visually-hidden">Форма для вашего отзыва</h1>
       <section class="review">
-        <img class="sedona" src="img/sedona.svg" alt="Фото приветствия." width="229" height="39">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
+          <img class="review__sedona" src="img/sedona.svg" alt="Фото приветствия." width="229" height="39">
+        </picture>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/welcome-line-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/welcome-line-tablet.svg">
+          <img class="review__line" src="img/welcome-line.svg" alt="Линия." width="320" height="57">
+        </picture>
         <div class="review__wrapper">
           <p class="review__text">Оставьте свой отзыв</p><br>
           <p class="review__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>

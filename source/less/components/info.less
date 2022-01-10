@@ -283,6 +283,24 @@
   display: none;
 }
 
+@media (max-width: @mobile-width-only) {
+  .info__name {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .info__contact {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .info__impression {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .info__attraction {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .info {
     display: grid;
@@ -302,7 +320,7 @@
   .info__impression {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    padding: 0 20px 72px 60px;
+    padding: 0 19px 72px 60px;
   }
 
   .info__impression-group-title {
