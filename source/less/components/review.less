@@ -1,15 +1,29 @@
 .review {
-  background-image: url("../img/back-desktop.jpg");
-  background-size: 100% 233px;
+  background-image: url("../img/back-catalog.jpg");
+  background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #5496bd;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-catalog@2x.jpg");
+    background-size: 100% auto;
+  }
 }
 
-.sedona {
-  padding: 52px;
+.review__sedona {
+  padding-top: 52px;
+  padding-bottom: 10px;
+}
+
+.review__line {
+  width: 100%;
+  height: auto;
+  margin-bottom: -5.5px;
 }
 
 .review__wrapper {
-  padding: 90px 10px 16px 10px;
+  padding: 36px 10px 16px 10px;
+  background-color: #ffffff;
 }
 
 .review__text {
@@ -25,8 +39,32 @@
   letter-spacing: -0.1px;
 }
 
+@media (max-width: @mobile-width-only) {
+  .review {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
 
 @media (min-width: @tablet-width) {
+  .review {
+    background-image: url("../img/back-tablet-catalog.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #5496bd;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet-catalog@2x.jpg");
+      background-size: 100% auto;
+    }
+  }
+
+  .review__sedona {
+    width: 456px;
+    height: 77px;
+    padding-top: 95px;
+    padding-bottom: 60px;
+  }
+
   .review__wrapper {
     padding: 100px 140px 66px 140px;
   }
@@ -37,6 +75,23 @@
 }
 
 @media (min-width: @desktop-width) {
+  .review {
+    background-image: url("../img/back-desktop-catalog.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #5496bd;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop-catalog@2x.jpg");
+      background-size: 100% auto;
+    }
+  }
+
+  .review__sedona {
+    padding-top: 101px;
+    padding-bottom: 63px;
+  }
+
   .review__wrapper {
     padding: 100px 350px 66px 350px;
   }

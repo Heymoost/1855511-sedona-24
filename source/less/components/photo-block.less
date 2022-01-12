@@ -1,6 +1,6 @@
 .photo-block__text {
   text-align: start;
-  padding: 11px 0 15px 20px;
+  padding: 11px 30px 15px 20px;
 }
 
 .photo-block__text-title {
@@ -37,8 +37,31 @@
     grid-row: 1 / 2;
   }
 
+  .photo-block__info-vast {
+    width: 100%;
+    height: auto;
+  }
+
   .photo-block__text {
+    display: flex;
+    justify-content: space-between;
     background: #f2f2f2;
+    margin-top: -5px;
+  }
+
+  .photo-block__info-vegetation {
+    width: 100%;
+    height: auto;
+  }
+
+  .photo-block__info-road {
+    width: 100%;
+    height: auto;
+  }
+
+  .photo-block__info-bridge {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -46,34 +69,64 @@
   .photo-block {
     display: grid;
     grid-template-columns: auto auto auto;
+    padding: 0;
   }
 
   .photo-block__vast {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .photo {
-    display: grid;
-    grid-template-columns: 50% 50%;
+  .photo-block__info-vast {
+    width: 100%;
+    height: auto;
+    margin-bottom: -100px;
   }
 
-  .photo-block__vast {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .photo {
-    display: grid;
-    grid-template-columns: auto auto auto;
+  .photo-block__text {
+    position: relative;
+    width: auto;
+    background-color: transparent;
   }
 
-  .photo-block__vast {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
+  .photo-block__text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #000000;
+    opacity: 0.3;
+  }
+
+  .photo-block__text-title {
+    color: #ffffff;
+  }
+
+  .photo-block__text-author {
+    color: #ffffff;
+  }
+
+  .photo-block__text-num {
+    color: #ffffff;
+  }
+
+  .photo-block__info-vegetation {
+    width: 100%;
+    height: auto;
+    margin-bottom: -80px;
+  }
+
+  .photo-block__info-road {
+    width: 100%;
+    height: auto;
+    margin-bottom: -80px;
+  }
+
+  .photo-block__info-bridge {
+    width: 100%;
+    height: auto;
+    margin-bottom: -80px;
   }
 }
