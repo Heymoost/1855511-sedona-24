@@ -1,3 +1,16 @@
 .page-main {
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .page-main__line::before {
+    content: "";
+    position: absolute;
+    top: 612px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1px;
+    height: 292px;
+    background-color: #dbdbdb;
+  }
+}

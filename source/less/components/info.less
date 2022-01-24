@@ -140,6 +140,14 @@
   border: 5px solid transparent;
 }
 
+.answer__circle:hover {
+  background: #e5e5e5;
+}
+
+.answer__circle:active {
+  background: #d5d5d5;
+}
+
 .answer__input[type="radio"]:checked + .answer__circle {
   background-image: url("../img/circle.svg");
   background-repeat: no-repeat;
@@ -217,6 +225,14 @@
   outline: none;
 }
 
+.point__checkbox:hover {
+  background-color: #e5e5e5;
+}
+
+.point__checkbox:active {
+  background-color: #d5d5d5;
+}
+
 .point__control {
   display: flex;
   align-items: center;
@@ -272,11 +288,20 @@
   margin: 51px 0 0 0;
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 21px;
+  font-weight: 700;
+  font-size: 18px;
   line-height: 26px;
   background: #81b3d2;
   border: none;
   cursor: pointer;
+}
+
+.info__emotions-button:hover {
+  background: #669ec0;
+}
+
+.info__emotions-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .info__emotions-footnote {
@@ -323,6 +348,26 @@
     padding: 0 19px 72px 60px;
   }
 
+  .info__impression-line::before {
+    content: "";
+    position: absolute;
+    top: 1311px;
+    left: 8%;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .info__impression-line::after {
+    content: "";
+    position: absolute;
+    top: 1311px;
+    right: 8%;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
   .info__impression-group-title {
     text-align: start;
     padding-bottom: 60px;
@@ -346,6 +391,26 @@
 
   .info__contact-tittle {
     font-size: 21px;
+  }
+
+  .info__contact-line::before {
+    content: "";
+    position: absolute;
+    top: 1010px;
+    left: 8%;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .info__contact-line::after {
+    content: "";
+    position: absolute;
+    top: 1010px;
+    right: 8%;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
   }
 
   .info__attraction {
@@ -380,6 +445,26 @@
     grid-column: 1 / -1;
     text-align: start;
     padding: 0 60px 58px 60px;
+  }
+
+  .info__emotions-line::before {
+    content: "";
+    position: absolute;
+    top: 1620px;
+    left: 8%;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .info__emotions-line::after {
+    content: "";
+    position: absolute;
+    top: 1620px;
+    right: 8%;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
   }
 
   .info__emotions-text {
@@ -423,6 +508,31 @@
     grid-row: 1 / 2;
   }
 
+  .info__contact-line {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+
+  .info__contact-line::before {
+    content: "";
+    position: absolute;
+    top: 1018px;
+    left: 10.5%;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .info__contact-line::after {
+    content: "";
+    position: absolute;
+    top: 1018px;
+    right: 10.5%;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
   .info__contact-item {
     display: flex;
     padding-top: 71px;
@@ -437,6 +547,26 @@
 
   .info__impression {
     padding: 0 128px 70px 120px;
+  }
+
+  .info__impression-line::before {
+    content: "";
+    position: absolute;
+    top: 1238px;
+    left: 10.5%;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .info__impression-line::after {
+    content: "";
+    position: absolute;
+    top: 1238px;
+    right: 10.5%;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
   }
 
   .info__impression-group-title {
@@ -464,33 +594,36 @@
     padding: 0 120px 66px 120px;
   }
 
+  .info__emotions-line::before {
+    content: "";
+    position: absolute;
+    top: 1448px;
+    left: 10.5%;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .info__emotions-line::after {
+    content: "";
+    position: absolute;
+    top: 1448px;
+    right: 10.5%;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
   .info__emotions-button {
     width: 480px;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .info {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
+input:hover {
+  background: #e5e5e5;
+}
 
-  .info__impression {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .info__contact {
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-  }
-
-  .info__attraction {
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
-  }
-
-  .info__emotions {
-    grid-column: 1 / -1;
-  }
+input:active {
+  background: #ffffff;
+  box-shadow: inset 0 0 0 4px #e5e5e5;
 }
