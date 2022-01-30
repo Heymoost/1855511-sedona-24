@@ -10,7 +10,9 @@
 }
 
 .video-block__info {
+  padding-top: 10px;
   margin: 0;
+  line-height: 24px;
 }
 
 .video__player {
@@ -19,6 +21,10 @@
 }
 
 @media (max-width: @mobile-width-only) {
+  .video {
+    padding-bottom: 110px;
+  }
+
   .video-range {
     padding: 0 20px 0 20px;
   }
@@ -89,7 +95,7 @@
     position: absolute;
     z-index: 100;
     top: 18px;
-    right: 29%;
+    right: 26%;
     fill: #5c6870;
     cursor: pointer;
   }
@@ -98,7 +104,7 @@
     position: absolute;
     z-index: 100;
     top: 18px;
-    right: 5%;
+    right: 8%;
     fill: #5c6870;
     cursor: pointer;
   }
@@ -113,7 +119,12 @@
   }
 
   .video-block {
-    padding: 58px 160px 67px 160px;
+    padding: 58px 160px 77px 160px;
+  }
+
+  .video-block__title {
+    font-size: 30px;
+    padding-bottom: 5px;
   }
 
   .video-range {
@@ -153,7 +164,7 @@
     width: 9px;
     height: 9px;
     top: -94px;
-    left: 160px;
+    left: 207px;
     color: #ffffff;
     border-radius: 50%;
     cursor: pointer;
@@ -163,8 +174,8 @@
 
   .video-range__replay {
     position: absolute;
-    top: -100px;
-    left: 8%;
+    top: -102px;
+    left: 7.5%;
     transform: translate(-82%);
     fill: #ffffff;
     cursor: pointer;
@@ -172,8 +183,8 @@
 
   .video-range__subtitles {
     position: absolute;
-    top: -100px;
-    right: 15%;
+    top: -102px;
+    right: 14%;
     fill: #ffffff;
     cursor: pointer;
   }
@@ -181,13 +192,25 @@
   .video-range__fullscreen {
     position: absolute;
     top: -100px;
-    right: 5%;
+    right: 6%;
     fill: #ffffff;
     cursor: pointer;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .video-block {
+    padding-top: 65px;
+  }
+
+  .video-block__title {
+    padding-bottom: 10px;
+  }
+
+  .video-block__info {
+    padding: 0 210px 0 210px;
+  }
+
   .video__player {
     padding: 0 200px 85px 200px;
   }
@@ -212,21 +235,21 @@
 
   .video-range__toggle {
     top: -138px;
-    left: 350px;
+    left: 347px;
   }
 
   .video-range__replay {
-    top: -143px;
-    left: 195px;
+    top: -146px;
+    left: 188px;
   }
 
   .video-range__subtitles {
-    top: -143px;
-    right: 235px;
+    top: -146px;
+    right: 233px;
   }
 
   .video-range__fullscreen {
-    top: -143px;
-    right: 175px;
+    top: -146px;
+    right: 182px;
   }
 }
