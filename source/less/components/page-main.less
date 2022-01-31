@@ -1,4 +1,5 @@
 .page-main {
+  align-items: center;
   text-align: center;
 }
 
@@ -12,5 +13,11 @@
     width: 1px;
     height: 292px;
     background-color: #dbdbdb;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__line::before {
+    top: 640px;
   }
 }

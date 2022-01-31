@@ -1,5 +1,5 @@
 .info__name {
-  padding: 19px 20px 25px 20px;
+  padding: 19px 20px 7px 20px;
 }
 
 .info__name-tittle {
@@ -92,7 +92,7 @@
 }
 
 .info__impression {
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 30px 20px;
 }
 
 .info__impression-group {
@@ -102,7 +102,7 @@
 
 .info__impression-group-title {
   width: 100%;
-  padding: 0 0 37px 0;
+  padding: 0 0 20px 0;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -132,8 +132,8 @@
 }
 
 .answer__circle {
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   background: #f2f2f2;
   border-radius: 50%;
   cursor: pointer;
@@ -169,7 +169,7 @@
 }
 
 .info__attraction {
-  padding: 15px 20px 39px 20px;
+  padding: 15px 20px 30px 20px;
 }
 
 .info__attraction-group {
@@ -180,7 +180,7 @@
 }
 
 .info__attraction-title {
-  padding: 0 0 36px 0;
+  padding: 0 0 25px 0;
   margin: auto;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -216,8 +216,8 @@
 }
 
 .point__checkbox {
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   background-color: #f2f2f2;
   border-radius: 4px;
   cursor: pointer;
@@ -333,19 +333,24 @@
   }
 
   .info__name {
-    padding: 0 60px 72px 30px;
+    padding: 0 60px 57px 30px;
   }
 
   .info__name-tittle {
     text-align: start;
+    padding-left: 27px;
     padding-bottom: 54px;
     font-size: 21px;
+  }
+
+  .info__name-item-text {
+    padding: 5px 10px 0 25px;
   }
 
   .info__impression {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    padding: 0 19px 72px 60px;
+    padding: 0 19px 57px 60px;
   }
 
   .info__impression-line::before {
@@ -372,7 +377,6 @@
     text-align: start;
     padding-bottom: 60px;
     font-size: 21px;
-    letter-spacing: -1px;
   }
 
   .info__impression-group-list {
@@ -380,13 +384,13 @@
   }
 
   .info__impression-group-item {
-    padding-bottom: 29px;
+    padding-bottom: 25px;
   }
 
   .info__contact {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    padding: 0 60px 50px 60px;
+    padding: 0 60px 60px 60px;
   }
 
   .info__contact-tittle {
@@ -396,7 +400,7 @@
   .info__contact-line::before {
     content: "";
     position: absolute;
-    top: 1010px;
+    top: 980px;
     left: 8%;
     width: 123px;
     height: 1px;
@@ -406,7 +410,7 @@
   .info__contact-line::after {
     content: "";
     position: absolute;
-    top: 1010px;
+    top: 980px;
     right: 8%;
     width: 123px;
     height: 1px;
@@ -416,13 +420,14 @@
   .info__attraction {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
-    padding: 0 120px 75px 120px;
+    padding: 0 120px 55px 120px;
   }
 
   .info__attraction-title {
     width: 308px;
     margin: auto;
     padding-bottom: 47px;
+    letter-spacing: 1px;
   }
 
   .info__attraction-list {
@@ -434,7 +439,7 @@
   }
 
   .info__attraction-item {
-    padding-right: 44px;
+    padding-right: 0;
   }
 
   .point {
@@ -450,7 +455,7 @@
   .info__emotions-line::before {
     content: "";
     position: absolute;
-    top: 1620px;
+    top: 1590px;
     left: 8%;
     width: 123px;
     height: 1px;
@@ -460,7 +465,7 @@
   .info__emotions-line::after {
     content: "";
     position: absolute;
-    top: 1620px;
+    top: 1590px;
     right: 8%;
     width: 123px;
     height: 1px;
@@ -469,10 +474,16 @@
 
   .info__emotions-text {
     text-align: center;
+    padding-bottom: 58px;
+    letter-spacing: 1px;
   }
 
   .info__emotions-block {
     display: flex;
+  }
+
+  .info__emotions-field {
+    letter-spacing: 0.1px;
   }
 
   .info__emotions-button {
@@ -483,18 +494,23 @@
   .info__emotions-footnote {
     display: flex;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 70px;
     margin-left: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .info__name {
-    padding: 0 120px 70px 79px;
+    padding: 0 120px 50px 79px;
   }
 
   .info__name-tittle {
+    padding-left: 0;
     padding-bottom: 56px;
+  }
+
+  .info__name-item-text {
+    padding: 0 25px 0 0;
   }
 
   .info__contact {
@@ -516,7 +532,7 @@
   .info__contact-line::before {
     content: "";
     position: absolute;
-    top: 1018px;
+    top: 1010px;
     left: 10.5%;
     width: 280px;
     height: 1px;
@@ -526,7 +542,7 @@
   .info__contact-line::after {
     content: "";
     position: absolute;
-    top: 1018px;
+    top: 1010px;
     right: 10.5%;
     width: 280px;
     height: 1px;
@@ -546,13 +562,13 @@
   }
 
   .info__impression {
-    padding: 0 128px 70px 120px;
+    padding: 0 128px 50px 120px;
   }
 
   .info__impression-line::before {
     content: "";
     position: absolute;
-    top: 1238px;
+    top: 1233px;
     left: 10.5%;
     width: 280px;
     height: 1px;
@@ -562,7 +578,7 @@
   .info__impression-line::after {
     content: "";
     position: absolute;
-    top: 1238px;
+    top: 1233px;
     right: 10.5%;
     width: 280px;
     height: 1px;
@@ -571,14 +587,20 @@
 
   .info__impression-group-title {
     padding-bottom: 60px;
+    padding-left: 77px;
   }
 
   .info__impression-group-item {
-    padding-bottom: 33px;
+    padding-bottom: 25px;
   }
 
   .info__attraction {
-    padding-bottom: 73px;
+    padding-bottom: 65px;
+  }
+
+  .info__attraction-title {
+    font-size: 21px;
+    letter-spacing: -0.2px;
   }
 
   .info__attraction-list {
@@ -597,7 +619,7 @@
   .info__emotions-line::before {
     content: "";
     position: absolute;
-    top: 1448px;
+    top: 1435px;
     left: 10.5%;
     width: 280px;
     height: 1px;
@@ -607,7 +629,7 @@
   .info__emotions-line::after {
     content: "";
     position: absolute;
-    top: 1448px;
+    top: 1435px;
     right: 10.5%;
     width: 280px;
     height: 1px;
