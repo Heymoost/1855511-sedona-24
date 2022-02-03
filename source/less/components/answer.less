@@ -1,0 +1,39 @@
+.answer {
+  display: flex;
+}
+
+.answer__circle {
+  width: 44px;
+  height: 44px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 5px solid transparent;
+}
+
+.answer__circle:hover {
+  background: #e5e5e5;
+}
+
+.answer__circle:active {
+  background: #d5d5d5;
+}
+
+.answer__input[type="radio"]:checked + .answer__circle {
+  background-image: url("../img/circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.answer__control {
+  display: flex;
+  align-items: center;
+  padding-left: 26px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: none;
+  letter-spacing: -0.4px;
+}
