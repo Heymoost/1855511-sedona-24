@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="preload" href="/fonts/ptsans-400.woff2" type="font/woff2" crossorigin="anonymous" as="font">
+    <link rel="preload" href="/fonts/ptsans-400.woff" type="font/woff" crossorigin="anonymous" as="font">
+    <link rel="preload" href="/fonts/ptsans-700.woff2" type="font/woff2" crossorigin="anonymous" as="font">
+    <link rel="preload" href="/fonts/ptsans-700.woff" type="font/woff" crossorigin="anonymous" as="font">
   </head>
   <!-- Шапка -->
   <body class="page__body">
-    <svg style="display: none;">
+    <svg class="sprite">
       <symbol viewBox="0 0 18 15" id="icon-twitter">
         <path d="M11.3 0.166728C13 -0.333272 14.4 0.366728 15 1.26673C15.7 1.06673 16.4 0.766728 17.1 0.566728C17.1 1.36673 16.6 2.06673 16.2 2.26673C16.9 2.46673 17.5 1.76673 17.5 1.76673C17.3 2.76673 16.5 3.46673 15.9 3.76673C15.7 10.3667 12.6 14.7667 5.5 14.5667C5 14.5667 5.6 14.5667 5 14.5667C4.6 14.5667 0.7 14.1667 0 12.7667C2.3 12.9667 4 12.3667 4.8 11.6667C3.8 11.3667 2 11.1667 1.7 8.76673C2.1 8.86673 2.3 8.96673 3 8.86673C1.8 8.06673 0.4 7.36673 0.5 5.16673C0.8 5.46673 1.6 5.66673 1.9 5.66673C1.2 5.46673 -0.1 2.36673 1 0.866728C2.9 2.66673 4.8 4.36673 8.4 4.56673C8.5 2.26673 9.5 0.766728 11.3 0.166728Z">
       </symbol>
@@ -24,11 +28,11 @@
       </symbol>
     </svg>
     <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs"> <!-- Классы opened и closed меняют состояние мобильного меню -->
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a class="main-nav__item-link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
@@ -41,7 +45,7 @@
               </picture>
             </a>
             <li class="main-nav__item">
-              <a class="main-nav__item-link" href="form.html">Форма отзыва</a>
+              <a class="main-nav__item-link main-nav__item-link-select" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="https://htmlacademy.ru">HTML Academy</a>
@@ -90,7 +94,7 @@
           <div class="info__contact-item">
             <label class="info__contact-item-text" for="phone">Телефон*:</label>
             <div class="info__contact-item-block">
-              <input class="info__contact-item-field" placeholder="Введите телефон:" type="text" name="phone" id="phone" required>
+              <input class="info__contact-item-field" placeholder="Введите телефон:" type="tel" name="phone" id="phone" required>
               <span class="info__contact-icon">
                 <svg viewBox="0 0 18 18" class="info__contact-icon-svg" width="18" height="18">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -101,7 +105,7 @@
           <div class="info__contact-item">
             <label class="info__contact-item-text" for="email">Электронная почта*:</label>
             <div class="info__contact-item-block">
-              <input class="info__contact-item-field" placeholder="Введите e-mail" type="text" name="email" id="email" required>
+              <input class="info__contact-item-field" placeholder="Введите e-mail" type="email" name="email" id="email" required>
               <span class="info__contact-icon">
                 <svg viewBox="0 0 16 12" class="info__contact-icon-svg" width="16" height="12">
                   <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -180,7 +184,7 @@
           <h2 class="visually-hidden">Эмоции:</h2>
           <div class="info__emotions-line"></div>
           <label class="info__emotions-text" for="emotions">Опишите свои эмоции:</label>
-          <textarea class="info__emotions-field" name="text" wrap="wrap" name="emotions" required>Опишите подробно все свои восторги</textarea>
+          <textarea class="info__emotions-field" name="text" wrap="wrap" id="emotions" required>Опишите подробно все свои восторги</textarea>
           <div class="info__emotions-block">
             <button class="info__emotions-button" type="submit">Отправить отзыв</button>
             <p class="info__emotions-footnote">* — обязательные поля</p>
@@ -195,6 +199,7 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#">
+              <p class="visually-hidden">Ссылка на twitter.</p>
               <svg class="social__link-twitter" width="18" height="15">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
@@ -202,6 +207,7 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
+              <p class="visually-hidden">Ссылка на facebook.</p>
               <svg class="social__link-facebook" width="9" height="19">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
@@ -209,6 +215,7 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
+              <p class="visually-hidden">Ссылка на youtube.</p>
               <svg class="social__link-youtube" width="20" height="14">
                 <use xlink:href="#icon-youtube"></use>
               </svg>
@@ -218,6 +225,7 @@
         <div class="page-footer__copyright">
           <p class="page-footer__copyright-text">Разработано</p>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="visually-hidden">Логотип компании.</p>
             <svg class="page-footer__copyright-logo" width="27" height="35">
               <use xlink:href="#icon-logo"></use>
             </svg>
@@ -243,6 +251,6 @@
         <button class="error__button-close" type="button">Закрыть окно</button>
       </div>
     </div>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> Скрипт открытия/закрытия мобильного меню -->
   </body>
 </html>

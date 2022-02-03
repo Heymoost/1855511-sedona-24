@@ -1,0 +1,45 @@
+.point {
+  display: flex;
+}
+
+.point-input[type="checkbox"]:checked + .point__checkbox {
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.point__checkbox {
+  width: 44px;
+  height: 44px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 5px solid transparent;
+  outline: none;
+}
+
+.point__checkbox:hover {
+  background-color: #e5e5e5;
+}
+
+.point__checkbox:active {
+  background-color: #d5d5d5;
+}
+
+.point__control {
+  display: flex;
+  align-items: center;
+  padding-left: 29px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: none;
+}
+
+@media (min-width: @tablet-width) {
+  .point {
+    display: flex;
+  }
+}
